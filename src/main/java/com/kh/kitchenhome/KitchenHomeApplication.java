@@ -7,11 +7,11 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 
 @SpringBootApplication
-public class KitchenhomeApplication {
+public class KitchenHomeApplication {
 
 	public static void main(String[] args) {
 		
-		SpringApplication.run(KitchenhomeApplication.class, args);
+		SpringApplication.run(KitchenHomeApplication.class, args);
 		System.out.println("KH App Started");
 	}
 }
