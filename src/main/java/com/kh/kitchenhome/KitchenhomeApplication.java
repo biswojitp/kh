@@ -10,6 +10,8 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class KitchenhomeApplication {
 
 	public static void main(String[] args) {
+		
 		SpringApplication.run(KitchenhomeApplication.class, args);
+		System.out.println("KH App Started");
 	}
 }
