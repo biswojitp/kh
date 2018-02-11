@@ -22,10 +22,11 @@ import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 public class Kitchen implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
+    @Column(name = "user_id")
     private Long id;
 
     @NotBlank
-    @Column(name = "item_name")
+    @Column(name = "pitem_name")
     private String item;
 
     @NotBlank
