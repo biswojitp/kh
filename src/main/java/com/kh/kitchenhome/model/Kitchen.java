@@ -26,7 +26,7 @@ public class Kitchen implements Serializable {
     private Long id;
 
     @NotBlank
-    @Column(name = "pitem_name")
+    @Column(name = "item_name")
     private String item;
 
     @NotBlank
