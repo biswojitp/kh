@@ -1,2 +1,16 @@
 UPDATE mysql.user SET authentication_string = PASSWORD('ishnasql'), password_expired = 'N' WHERE User = 'root' AND Host = 'localhost';
 FLUSH PRIVILEGES;
+
+0.password for root@localhost: ishnasql
+1.	show databases;
+2.	https://www.a2hosting.com/kb/developer-corner/mysql/managing-mysql-databases-and-users-from-the-command-line
+3.use khome
+4. select database() from dual;
+5. show tables;
+
+
+6. CREATE TABLE kitchen (user_id VARCHAR(20), item_name VARCHAR(20), item_price number);
+
+7. CREATE TABLE kitchen (user_id VARCHAR(20), item_name VARCHAR(20), item_price int);
+
+8. insert into kitchen(1,'Jalebi',10);
