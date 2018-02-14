@@ -36,33 +36,7 @@
 									</div>
 								</div>
 								
-							<div class="row">
-
-								<div class="col-md-3 col-sm-3">
-									<div class="form-group">
-										<label class="col-md-12 " for="inputDefault"><spring:message code="KITCHENHOME.ITEM.MANUFACTURE" />:</label>
-										<div class="col-md-12 ">
-											<input type="text" name="mfr" class="form-control" id="mfr" value="${treatmentPlantById.mfr}" maxlength="40" onchange ="validateNameAndCode(this)" >
-										</div>
-									</div>
-								</div>
-								<div class="col-md-3 col-sm-3">
-									<div class="form-group">
-										<label class="col-md-12 " for="inputDefault"><spring:message code="KITCHENHOME.ITEM.SGST" />:</label>
-										<div class="col-md-12">
-											<input type="text" name="sgst" class="form-control" id="sgst" value="${treatmentPlantById.sgst}" maxlength="40" onchange ="validateNameAndCode(this)" >
-										</div>
-									</div>
-								</div>	
-								<div class="col-md-3 col-sm-3">
-									<div class="form-group">
-										<label class="col-md-12 " for="inputDefault"><spring:message code="KITCHENHOME.ITEM.CGST" />:</label>
-										<div class="col-md-12">
-											<input type="text" name="cgst" class="form-control" id="cgst" value="${treatmentPlantById.cgst}" maxlength="40" onchange ="validateNameAndCode(this)" >
-										</div>
-									</div>
-								</div>				
-							</div>
+							
 							<div class="row">
 							<button type="submit" class="btn btn-success" >
 											<spring:message code="COMMON.BUTTON.SUBMIT"></spring:message>

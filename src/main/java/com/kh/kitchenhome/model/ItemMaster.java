@@ -21,20 +21,12 @@ private static final long serialVersionUID = 1L;
 	private Long Id;
 	
 	@Column(name="item_name")
-	private Long itemName;
+	private String itemName;
 	
 	@Column(name="HSN")
 	private String HSN;
 	
-	@Column(name="mfr")
-	private String mfr;
 	
-	@Column(name="sgst")
-	private float sgst;
-	
-	@Column(name="cgst")
-	private float cgst;
-
 	public Long getId() {
 		return Id;
 	}
@@ -43,11 +35,11 @@ private static final long serialVersionUID = 1L;
 		Id = id;
 	}
 
-	public Long getItemName() {
+	public String getItemName() {
 		return itemName;
 	}
 
-	public void setItemName(Long itemName) {
+	public void setItemName(String itemName) {
 		this.itemName = itemName;
 	}
 
@@ -59,29 +51,7 @@ private static final long serialVersionUID = 1L;
 		HSN = hSN;
 	}
 
-	public String getMfr() {
-		return mfr;
-	}
-
-	public void setMfr(String mfr) {
-		this.mfr = mfr;
-	}
-
-	public float getSgst() {
-		return sgst;
-	}
-
-	public void setSgst(float sgst) {
-		this.sgst = sgst;
-	}
-
-	public float getCgst() {
-		return cgst;
-	}
 	
-	public void setCgst(float cgst) {
-		this.cgst = cgst;
-	}
 	
 	
 }
