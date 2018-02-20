@@ -18,11 +18,22 @@ public class KHController {
 	
 	@Autowired
     KitchenRepository kitchenRepository;
-
+	
 	@RequestMapping("/")
-	public String mehi() {
-		return "index";
+	String home() {
+			
+		return "welcome";
 	}
+
+	
+	@RequestMapping("/login")
+	String login() {
+	  
+		return "app.homepage";
+		
+		//return "baseLayout";
+	}
+
 	@RequestMapping(value = "/findlist")
     public String home(Map<String, Object> model) {
         model.put("message", "HowToDoInJava Reader !!");
@@ -40,11 +51,14 @@ public class KHController {
 		model.put("message", "testjsp");
 		return "testjsp";
 	}
+	@RequestMapping("/signup.htm")
+	String signup() {
+	  return "signup";
+		
+		//return "baseLayout";
+	}
 	
-//	@RequestMapping("/kitchen")
-//	public List<Kitchen> getAllKitcheItems() {
-//	    return kitchenRepository.findAll();
-//	}
+
 }
 
 
