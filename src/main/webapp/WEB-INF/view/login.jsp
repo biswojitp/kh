@@ -9,7 +9,7 @@
 <section class="body-sign">
 			<div class="center-sign">
 				<a href="index.html" class="logo pull-left">
-					<img src="assets/images/logo.jpg" height="54" alt="" />
+					<img src="/assets/images/logo.jpg" height="54" alt="" />
 				</a>
 
 				<div class="panel panel-sign">

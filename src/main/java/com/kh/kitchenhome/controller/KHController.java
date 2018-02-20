@@ -21,43 +21,32 @@ public class KHController {
 	
 	@RequestMapping("/")
 	String home() {
-			
-		return "app.homepage";
+		return "app.welcome";
 	}
 
-	
 	@RequestMapping("/login")
 	String login() {
-	  
-		return "app.homepage";
-		
-		//return "baseLayout";
+	  return "app.login";
+	}
+	
+	@RequestMapping("/signup.htm")
+	String signup() {
+	  return "app.signup";
 	}
 
 	@RequestMapping(value = "/findlist")
     public String home(Map<String, Object> model) {
         model.put("message", "HowToDoInJava Reader !!");
         List<Kitchen> klist= kitchenRepository.findAll();
-        System.out.println("**********************************"+klist.get(0).getItem());
-       // return "index";
-        
         return "testjsp";
     }
 	
-		
 	@RequestMapping("/testjsp")
 	public String welcome(Map<String, Object> model) {
 		model.put("time", new Date());
 		model.put("message", "testjsp");
 		return "testjsp";
 	}
-	@RequestMapping("/signup.htm")
-	String signup() {
-	  return "signup";
-		
-		//return "baseLayout";
-	}
-	
 
 }
 

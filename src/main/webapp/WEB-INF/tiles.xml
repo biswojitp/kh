@@ -5,12 +5,25 @@
  
 <tiles-definitions>
  
-	<definition name="app.homepage" template="/WEB-INF/layouts/baseLayout.jsp">
+	<definition name="app.default" template="/WEB-INF/layouts/baseLayout.jsp">
 		<put-attribute name="title" value="Demo Page" />
 		<put-attribute name="header" value="/WEB-INF/tiles/header.jsp" />
-		<put-attribute name="body" value="/WEB-INF/tiles/welcome.jsp" />
 		<put-attribute name="leftMenu" value="/WEB-INF/tiles/leftMenu.jsp" />
 		<put-attribute name="footer" value="/WEB-INF/tiles/footer.jsp" />
 	</definition>
+	
+	
+	<definition name="app.welcome" extends="app.default">
+		<put-attribute name="body" value="/WEB-INF/view/welcome.jsp" />
+	</definition>
+ 
+	<definition name="app.login" extends="app.default">
+		<put-attribute name="body" value="/WEB-INF/view/login.jsp" />
+	</definition>
+	
+	<definition name="app.signup" extends="app.default">
+		<put-attribute name="body" value="/WEB-INF/view/signup.jsp" />
+	</definition>
+	
  
 </tiles-definitions>
