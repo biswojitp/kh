@@ -18,8 +18,7 @@
 						<form class="form-horizontal form-bordered" id="createTreatmentPlant" action="./saveItemList.htm" method="post">
 											
 						<div class="row">
-																
-								<div class="col-md-6 col-sm-6">
+						<div class="col-md-6 col-sm-6">
 									<div class="form-group">
 										<label class="col-md-12 required" for="inputDefault"> <spring:message code="KITCHENHOME.ITEM.ITEMNAME" /></label>
 										<div class="col-md-12">
@@ -35,6 +34,33 @@
 										</div>
 									</div>
 								</div>
+								<div class="col-md-3 col-sm-3">
+									<div class="form-group">
+										<label class="col-md-12 required" for="inputDefault"> <spring:message code="KITCHENHOME.ITEM.MANUFACTURE" /></label>
+										<div class="col-md-12">
+											<input type="text" class="form-control" name="mfr" id="mfr" value="${treatmentPlantById.mfr}"  maxlength="20" onchange ="validateNameAndCode(this)" /> 
+										</div>
+									</div>
+								</div>
+								<div class="col-md-3 col-sm-3">
+									<div class="form-group">
+										<label class="col-md-12 required" for="inputDefault"> <spring:message code="KITCHENHOME.ITEM.SGST" /></label>
+										<div class="col-md-12">
+											<input type="text" class="form-control" name="sgst" id="sgst" value="${treatmentPlantById.sgst}"  maxlength="20" onchange ="validateNameAndCode(this)" /> 
+										</div>
+									</div>
+								</div>
+								<div class="col-md-3 col-sm-3">
+									<div class="form-group">
+										<label class="col-md-12 required" for="inputDefault"> <spring:message code="KITCHENHOME.ITEM.CGST" /></label>
+										<div class="col-md-12">
+											<input type="text" class="form-control" name="cgst" id="cgst" value="${treatmentPlantById.cgst}"  maxlength="20" onchange ="validateNameAndCode(this)" /> 
+										</div>
+									</div>
+								</div>
+						</div>
+																
+						
 								
 							
 							<div class="row">

@@ -5,12 +5,11 @@
  
 <tiles-definitions>
  
-	<definition name="app.homepage" template="/WEB-INF/layouts/default.jsp">
+	<definition name="app.homepage" template="/WEB-INF/layouts/baseLayout.jsp">
 		<put-attribute name="title" value="Demo Page" />
 		<put-attribute name="header" value="/WEB-INF/tiles/header.jsp" />
-		<put-attribute name="content" value="/WEB-INF/tiles/home.jsp" />
+		<put-attribute name="body" value="/WEB-INF/tiles/welcome.jsp" />
 		<put-attribute name="leftMenu" value="/WEB-INF/tiles/leftMenu.jsp" />
-		<put-attribute name="body" />	
 		<put-attribute name="footer" value="/WEB-INF/tiles/footer.jsp" />
 	</definition>
  

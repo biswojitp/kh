@@ -16,6 +16,7 @@ import org.springframework.web.servlet.ModelAndView;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 import org.springframework.web.servlet.view.RedirectView;
 
+import com.kh.kitchenhome.model.ItemCategory;
 import com.kh.kitchenhome.model.ItemMaster;
 import com.kh.kitchenhome.service.ItemService;
 
@@ -51,4 +52,33 @@ public class ItemController {
         
         return "itemMaster";
     }
+	@RequestMapping(value = "/itemCategory.htm", method = RequestMethod.GET)
+	public ModelAndView getItemCategory() {
+		ModelAndView mav = new ModelAndView();
+		mav.addObject("itemCategoryList",itemService.findAllItemtCategory()); 
+		mav.setViewName("itemCategory");
+		return mav;
+		
+	}
+	@RequestMapping(value = "/createItemCategory.htm", method = RequestMethod.POST)
+	public RedirectView saveItemDetails(@ModelAttribute("itemCategory") ItemCategory itemCategory,
+			RedirectAttributes attributes,HttpSession session ,Principal principal) {
+		//System.out.println("item name "+itemMaster.getItemName());
+		attributes = itemService.saveItemCategory(itemCategory, attributes, principal);
+		/*if (attributes != null) {
+			attributes.addFlashAttribute("success_msg", "   Added sucessfully.");
+		} else {
+			attributes.addFlashAttribute("error_msg","Project creation having problem...Try again later");
+		}	*/
+		return new RedirectView("itemCategory.htm", true);
+	}
+	@RequestMapping(value = "/itemSubCategory.htm", method = RequestMethod.GET)
+	public ModelAndView getItemSubCategory() {
+		ModelAndView mav = new ModelAndView();
+		mav.addObject("itemSubCategoryList",itemService.findAllItemtSubCategory()); 
+		mav.setViewName("itemSubCategory");
+		return mav;
+		
+	}
+	
 }

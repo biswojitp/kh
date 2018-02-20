@@ -20,7 +20,7 @@
 					<tiles:insertAttribute name="leftMenu" /> 
 	
 					<!-- Body -->
-					<tiles:insertAttribute name="content" />
+					<tiles:insertAttribute name="body" />
 					<!-- Body end-->
 				</div>
 	<br />

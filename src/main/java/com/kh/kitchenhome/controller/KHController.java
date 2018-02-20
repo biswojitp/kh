@@ -22,7 +22,7 @@ public class KHController {
 	@RequestMapping("/")
 	String home() {
 			
-		return "welcome";
+		return "app.homepage";
 	}
 
 	

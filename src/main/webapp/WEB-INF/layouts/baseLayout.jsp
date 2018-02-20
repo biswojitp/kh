@@ -3,7 +3,7 @@
 <%@ page language="java" pageEncoding="utf-8" contentType="text/html; charset=UTF-8"%> 
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <%@ taglib prefix="spring" uri="http://www.springframework.org/tags" %>
-<%@ taglib prefix="sec" uri="http://www.springframework.org/security/tags" %>
+
  
 <!doctype html>
 
@@ -18,37 +18,37 @@
 	<meta name="author" content="Aashdit Technologies">
 
 	<!-- Favicon -->
-	<link rel="shortcut icon" href="resources/images/favicon.png">	
+	<link rel="shortcut icon" href="/images/favicon.png">	
 	
 	<!-- Vendor CSS -->
-	<link rel="stylesheet" href="resources/assets/vendor/bootstrap/css/bootstrap.css" />
-	<link rel="stylesheet" href="resources/assets/vendor/font-awesome/css/font-awesome.css" />
-	<link rel="stylesheet" href="resources/assets/vendor/magnific-popup/magnific-popup.css" />
-	<link rel="stylesheet" href="resources/assets/vendor/bootstrap-datepicker/css/datepicker3.css" />
-	<link rel="stylesheet" href="resources/assets/vendor/bootstrap-fileupload/bootstrap-fileupload.min.css" />
-	<link rel="stylesheet" href="resources/assets/vendor/jquery-datatables-bs3/assets/css/datatables.css" />
+	<link rel="stylesheet" href="/assets/vendor/bootstrap/css/bootstrap.css" />
+	<link rel="stylesheet" href="/assets/vendor/font-awesome/css/font-awesome.css" />
+	<link rel="stylesheet" href="/assets/vendor/magnific-popup/magnific-popup.css" />
+	<link rel="stylesheet" href="/assets/vendor/bootstrap-datepicker/css/datepicker3.css" />
+	<link rel="stylesheet" href="/assets/vendor/bootstrap-fileupload/bootstrap-fileupload.min.css" />
+	<link rel="stylesheet" href="/assets/vendor/jquery-datatables-bs3/assets/css/datatables.css" />
 
 	<!-- Theme CSS -->
-	<link rel="stylesheet" href="resources/assets/stylesheets/theme.css" />
+	<link rel="stylesheet" href="/assets/stylesheets/theme.css" />
 
 	<!-- Skin CSS -->
-	<link rel="stylesheet" href="resources/assets/stylesheets/skins/default.css" />
+	<link rel="stylesheet" href="/assets/stylesheets/skins/default.css" />
 
 	<!-- Theme Custom CSS -->
-	<link rel="stylesheet" href="resources/assets/stylesheets/theme-custom.css">
-	<link rel="stylesheet" href="resources/assets/vendor/bootstrap-multiselect/bootstrap-multiselect.css" />
-   	<link href="resources/assets/vendor/multi_select/css/multi-select.css" media="screen" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" href="/assets/stylesheets/theme-custom.css">
+	<link rel="stylesheet" href="/assets/vendor/bootstrap-multiselect/bootstrap-multiselect.css" />
+   	<link href="/assets/vendor/multi_select/css/multi-select.css" media="screen" rel="stylesheet" type="text/css">
 	<!-- Head Libs -->
-	<script src="resources/assets/vendor/modernizr/modernizr.js"></script>
-	<script src="resources/assets/vendor/jquery/jquery.js"></script>
+	<script src="/assets/vendor/modernizr/modernizr.js"></script>
+	<script src="/assets/vendor/jquery/jquery.js"></script>
 </head>
 
 <body>	
 	
-	<c:set var="contextPath" value="${pageContext.request.contextPath}"/>
+<%-- 	<c:set var="contextPath" value="${pageContext.request.contextPath}"/> --%>
 	     
-	<c:choose>    
-		<c:when test="${pageContext.request.userPrincipal.name != null}">
+	<%-- <c:choose>     --%>
+		<%-- <c:when test="${pageContext.request.userPrincipal.name != null}"> --%>
 			<section class="body">
 				<!-- start: header -->
 				<tiles:insertAttribute name="header" /> 
@@ -63,37 +63,37 @@
 					<!-- Body end-->
 				</div>
 			</section>
-		</c:when>
-		<c:otherwise> 	
+		<%-- </c:when>
+		<c:otherwise> 	 --%>
 	
-	    <tiles:insertAttribute name="body" />
-		</c:otherwise>
-	</c:choose> 
+	    <%-- <tiles:insertAttribute name="body" />
+		</c:otherwise> --%>
+	<%-- </c:choose>  --%>
 
 	<!-- Vendor -->
 
-	<script src="resources/assets/vendor/jquery-browser-mobile/jquery.browser.mobile.js"></script>
-	<script src="resources/assets/vendor/bootstrap/js/bootstrap.js"></script>
-	<script src="resources/assets/vendor/nanoscroller/nanoscroller.js"></script>
-	<script src="resources/assets/vendor/bootstrap-datepicker/js/bootstrap-datepicker.js"></script>
-	<script src="resources/assets/vendor/magnific-popup/magnific-popup.js"></script>
-	<script src="resources/assets/vendor/jquery-placeholder/jquery.placeholder.js"></script>
-	<script src="resources/assets/vendor/bootstrap-fileupload/bootstrap-fileupload.min.js"></script>
-	<script src="resources/assets/vendor/jquery-datatables/media/js/jquery.dataTables.js"></script>
-	<script src="resources/assets/vendor/jquery-datatables-bs3/assets/js/datatables.js"></script>
-	<script src="resources/assets/vendor/bootstrap-multiselect/bootstrap-multiselect.js"></script>
+	<script src="/assets/vendor/jquery-browser-mobile/jquery.browser.mobile.js"></script>
+	<script src="/assets/vendor/bootstrap/js/bootstrap.js"></script>
+	<script src="/assets/vendor/nanoscroller/nanoscroller.js"></script>
+	<script src="/assets/vendor/bootstrap-datepicker/js/bootstrap-datepicker.js"></script>
+	<script src="/assets/vendor/magnific-popup/magnific-popup.js"></script>
+	<script src="/assets/vendor/jquery-placeholder/jquery.placeholder.js"></script>
+	<script src="/assets/vendor/bootstrap-fileupload/bootstrap-fileupload.min.js"></script>
+	<script src="/assets/vendor/jquery-datatables/media/js/jquery.dataTables.js"></script>
+	<script src="/assets/vendor/jquery-datatables-bs3/assets/js/datatables.js"></script>
+	<script src="/assets/vendor/bootstrap-multiselect/bootstrap-multiselect.js"></script>
 	<!-- Theme Base, Components and Settings -->
-	<script src="resources/assets/javascripts/theme.js"></script>
-	<script src="resources/assets/javascripts/bootbox.min.js"></script>
+	<script src="/assets/javascripts/theme.js"></script>
+	<script src="/assets/javascripts/bootbox.min.js"></script>
 	<!-- Theme Custom -->
-	<script src="resources/assets/javascripts/theme.custom.js"></script>
+	<script src="/assets/javascripts/theme.custom.js"></script>
 	
 	<!-- Theme Initialization Files -->
-	<script src="resources/assets/javascripts/theme.init.js"></script>
+	<script src="/assets/javascripts/theme.init.js"></script>
 
 	<!-- Examples -->
-	<script src="resources/assets/javascripts/tables/examples.datatables.default.js"></script>
-	<script src="resources/assets/javascripts/tables/examples.datatables.row.with.details.js"></script>
+	<script src="/assets/javascripts/tables/examples.datatables.default.js"></script>
+	<script src="/assets/javascripts/tables/examples.datatables.row.with.details.js"></script>
 
 </body>
 </html>

@@ -26,7 +26,39 @@ private static final long serialVersionUID = 1L;
 	@Column(name="HSN")
 	private String HSN;
 	
+	@Column(name="mfr")
+	private String mfr;
 	
+	@Column(name="sgst")
+	private String sgst;
+	
+	@Column(name="cgst")
+	private String cgst;
+	
+	public String getMfr() {
+		return mfr;
+	}
+
+	public void setMfr(String mfr) {
+		this.mfr = mfr;
+	}
+
+	public String getSgst() {
+		return sgst;
+	}
+
+	public void setSgst(String sgst) {
+		this.sgst = sgst;
+	}
+
+	public String getCgst() {
+		return cgst;
+	}
+
+	public void setCgst(String cgst) {
+		this.cgst = cgst;
+	}
+
 	public Long getId() {
 		return Id;
 	}
