@@ -1,0 +1,325 @@
+
+.login_background{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url(../images/login.jpg), #102a47;
+  z-index: 1;
+}
+.login_canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  opacity: 0.5;
+}
+.login_panel {
+    position: fixed;
+    top: calc(50% - 160px);
+    left: calc(50% - 290px);
+    width: 600px;
+    height: 350px;
+    z-index: 3;
+    background: rgba(13, 33, 56, 0.98);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.7);
+    -webkit-animation: float 10s ease-in-out infinite;
+    animation: float 10s ease-in-out infinite;
+}
+.login_panel .login_logo{
+    display: block;
+    width: 400px;
+    margin: 0 auto;
+    margin-top: 18px;
+    margin-bottom: 5px;
+}
+.login_panel .login_logo img{
+	width: 100%;
+}
+.form_con{
+	position: relative;
+    width: 100%;
+
+}
+.login-box {
+    width: 370px;
+    height: auto;
+    min-height: 80px;
+    margin: 0 auto 20px auto;
+    border-radius: 0px 0px 3px 3px;
+    position: relative;
+}
+.login .login-left {
+  position:relative;
+  float:left;
+  width:calc(100% - 40px);
+}
+.login .login-right {
+    position: relative;
+    float: left;
+    width: 40px;
+}
+.login .login-right button i {
+  color:#EEE;
+  position:absolute;
+  top:14px;
+  left:16px;
+  font-size:50px;
+}
+.login button[type="submit"] {
+  background: rgba(0, 0, 0, 0.66);
+  box-shadow: inset 0px 0px 8px rgba(0, 0, 0, 0.54);
+  width:100%;
+  height: 87px;
+  border:0;
+  outline:0;
+  border-radius: 3px;
+  font-weight:bold;
+  text-transform:uppercase;
+  letter-spacing:1px;
+  font-size:11px;
+  cursor:pointer;
+  transition: all 0.5s ease;
+}
+.login button[type="submit"]:hover {
+  background:#0E5D9A;
+}
+.login button[type="submit"] span {
+    display: block;
+    transform: rotate(270deg);
+    color: #fff;
+    font-size: 12px;
+    width: 100%;
+    margin: 10px 0 0 0px;
+    letter-spacing: 1px;
+}
+.login input {
+    width: calc(100% - 45px);
+    height: 40px;
+    line-height: 40px;
+    color: #DDD;
+    background: rgba(0, 0, 0, 0.42);
+    border: 0;
+    outline: 0;
+    border-radius: 0px 3px 3px 0px;
+    display: block;
+    padding: 0 10px;
+    margin-bottom: 7px;
+    text-transform: initial;
+    letter-spacing: 1px;
+    font-size: 10px;
+    transition: all 0.5s ease;
+}
+.login input::-webkit-input-placeholder {
+  color: #999;
+  font-weight:bold;
+  text-transform:uppercase;
+  letter-spacing:1px;
+  font-size:10px;
+}
+.login input:focus::-webkit-input-placeholder {
+   color: #DDD;
+}
+.login input::-moz-placeholder {
+  color: #fff;
+  font-weight:bold;
+  text-transform:uppercase;
+  letter-spacing:1px;
+  font-size:10px;
+}
+.login input:focus::-moz-placeholder {
+   color: #DDD;
+}
+.login input::-ms-input-placeholder {
+  color: #999;
+  font-weight:bold;
+  text-transform:uppercase;
+  letter-spacing:1px;
+  font-size:10px;
+}
+.login input:focus::-ms-input-placeholder {
+   color: #DDD;
+}
+.login input:focus {
+  background:#114d7f;
+}
+.login label {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+        background: rgba(0, 0, 0, 0.58);
+    box-shadow: inset 0px 0px 8px rgba(0, 0, 0, 0.54);
+    color: rgba(255, 255, 255, 0.51);
+    border-radius: 3px 0px 0px 3px;
+    display: block;
+    float: left;
+    transition: all 0.5s ease;
+}
+.login input[type=checkbox] {
+    width: initial;
+    height: initial;
+    line-height: initial;
+    color: initial;
+    background: initial;
+    box-shadow: initial;
+    border: 0;
+    outline: 0;
+    border-radius: initial;
+    display: initial;
+    padding: initial;
+    margin-bottom: initial;
+    text-transform: initial;
+    letter-spacing: initial;
+    font-size: initial;
+    transition: initial;
+}
+.recoverPass {
+  width:calc(40px + 100%);
+  min-height:50px;
+  padding: 20px;
+  margin: 110px 0 20px -20px;
+  display:none;
+  position:relative;
+  border-top: 5px solid #2890E6;
+}
+.remember {
+  height:40px!important;
+}
+.remember [class*="entypo-"] {
+  top: 7%!important;
+  left: 40%!important;
+  font-size: 30px!important;
+}
+
+.login footer {
+  width:370px;
+  position:relative;
+  margin:0 auto;
+}
+.login footer p {
+	font-size: 12px;
+    padding: 0 15px 0 0;
+    display: inline-block;
+    border-right: 2px dotted #164f7f;
+    color: rgba(255, 255, 255, 0.51);
+}
+.login footer span {
+  position:absolute;
+  top:9px;
+  right:0;
+  font-size:12px;
+  cursor: pointer;
+}
+.footer {
+  width:100%;
+  height:50px;
+  float:left;
+  overflow:hidden;
+  margin-top:80px;
+}
+.footer > p {
+  line-height:40px;
+  vertical-align:middle;
+  color: #333;
+  font-size:11px;
+  text-align:center;
+}
+.footer a:link, .footer a:visited, .footer a:active {
+  color:#2890E6;
+  text-decoration:none;
+}
+.footer a:hover {
+  width:200px;
+  color: white;
+  background: #2890E6;
+}
+#fppanel {
+    padding-top: 20px;
+}
+#fppanel button{
+	height: 40px;
+}
+#fppanel button i{
+	color: #EEE;
+    position: initial;
+    top: 0;
+    left: 0;
+    font-size: 20px;	
+}
+.copyrights{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    z-index: 3;
+    text-align: center;
+}
+.copyrights p{
+	font-family: 'Dosis', sans-serif;
+    color: rgba(255, 255, 255, 0.71);
+    font-size: 10px;
+    margin: 0 0 3px;
+}
+.copyrights p a{
+	color: rgba(255, 255, 255, 0.71);
+}
+
+
+/******************************
+		Media Quries
+******************************/
+@media (max-width: 991px) {
+}
+@media (max-width: 767px) {
+	.login_panel {
+	    top: 22%;
+	    left: 9%;
+	    width: 80%;
+	    height: 255px;
+	}
+	.login-box {
+	    width: 370px;
+	}
+	.login_panel .login_logo {
+	    width: 200px;
+	}
+	.login footer {
+	    width: 370px;
+	}
+	.login footer p {
+	    padding: 0 12px 0 0;
+	}
+	.login footer span {
+	    position: absolute;
+	    top: 4px;
+	}
+}
+@media (max-width: 500px) {
+	.login_panel {
+	    top: 22%;
+	    left: 9%;
+	    width: 80%;
+	    height: 255px;
+	}
+	.login-box {
+	    width: 90%;
+	}
+	.login_panel .login_logo {
+	    width: 200px;
+	}
+	.login footer {
+	    width: 90%;
+	}
+	.login footer p {
+	    padding: 0 12px 0 0;
+	}
+	.login footer span {
+	    position: absolute;
+	    top: 4px;
+	}
+}
