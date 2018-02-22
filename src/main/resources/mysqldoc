@@ -8,9 +8,10 @@ FLUSH PRIVILEGES;
 4. select database() from dual;
 5. show tables;
 
-
-6. CREATE TABLE kitchen (user_id VARCHAR(20), item_name VARCHAR(20), item_price number);
-
 7. CREATE TABLE kitchen (user_id VARCHAR(20), item_name VARCHAR(20), item_price int);
 
-8. insert into kitchen(1,'Jalebi',10);
+8. insert into kitchen values(1,'Jalebi',10);
+
+9. create table app_user (user_id varchar(20),user_name varchar(20), first_name varchar(20),
+							last_name varchar(20),email varchar(20),password varchar(20), gender varchar(1),phone varchar(15));
+10.alter table app_user add primary key (user_id);
