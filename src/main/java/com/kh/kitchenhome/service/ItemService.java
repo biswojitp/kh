@@ -21,4 +21,6 @@ public interface ItemService {
 
 	List<ItemSubCategory> findAllItemtSubCategory();
 
+	ItemCategory findOneItemtCategory(Long categoryId);
+
 }

@@ -62,4 +62,11 @@ public class ItemServiceImpl implements ItemService{
 		return subCategoryRepository.findAll();
 	}
 
+
+	@Override
+	public ItemCategory findOneItemtCategory(Long categoryId) {
+		
+		return categoryRepository.findOne(categoryId);
+	}
+
 }

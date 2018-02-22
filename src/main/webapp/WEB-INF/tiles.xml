@@ -24,6 +24,8 @@
 	<definition name="app.signup" extends="app.default">
 		<put-attribute name="body" value="/WEB-INF/view/signup.jsp" />
 	</definition>
-	
+	<definition name="itemCategory" extends="app.default">
+		<put-attribute name="body" value="/WEB-INF/view/itemCategory.jsp" />
+	</definition>
  
 </tiles-definitions>
