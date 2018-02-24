@@ -236,7 +236,7 @@ function check()
 										<td>${itemSubCategoryList.subCategoryName}</td>
 										<td>${itemSubCategoryList.subCategoryCode}</td>
 										<td><a class="btn btn-xs btn-circle btn-warning"
-											onclick="edit(${itemSubCategoryList.SubCategoryId})"> <i
+										onclick="edit(${itemSubCategoryList.subCategoryId})"> <i
 												class="fa fa-pencil" aria-hidden="true"
 												title=<spring:message code="COMMON.LABEL.EDIT"/>></i>
 										</a></td>
