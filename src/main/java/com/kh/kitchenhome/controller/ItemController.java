@@ -83,6 +83,7 @@ public class ItemController {
 	@RequestMapping(value = "/itemSubCategory.htm", method = RequestMethod.GET)
 	public ModelAndView getItemSubCategory() {
 		ModelAndView mav = new ModelAndView();
+		mav.addObject("itemCategoryList",itemService.findAllItemtCategory()); 
 		mav.addObject("itemSubCategoryList",itemService.findAllItemtSubCategory()); 
 		mav.setViewName("itemSubCategory");
 		return mav;
