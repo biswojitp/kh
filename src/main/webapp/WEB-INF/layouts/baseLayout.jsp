@@ -46,10 +46,7 @@
 <body>	
 	
 
-	<c:set var="contextPath" value="${pageContext.request.contextPath}"/>
-	     
-	<c:choose>    
-		<c:when test="${pageContext.request.userPrincipal.name != null}">
+	
 		
 			<section class="body">
 				<!-- start: header -->
@@ -65,12 +62,7 @@
 					<!-- Body end-->
 				</div>
 			</section>
-		</c:when>
-		<c:otherwise> 	
-	
-	    		<tiles:insertAttribute name="body" />
-		</c:otherwise>
-	</c:choose> 	
+			
 
 	<!-- Vendor -->
 

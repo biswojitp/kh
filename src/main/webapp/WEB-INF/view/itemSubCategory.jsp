@@ -113,17 +113,17 @@ function check()
 										<option value="">
 											<spring:message code="COMMON.LABEL.DROPDOWN.SELECT" />
 										</option>
-										<c:forEach items="${itemCategoryList}" var="itemCategoryList">
+										<c:forEach items="${itemCategoryList}" var="itemCategory">
 											<c:choose>
 												<c:when
-													test="${itemCategoryList.categoryId eq itemSubCategoryList.itemCategory.categoryId}">
-													<option value="${itemCategoryList.categoryId}"
-														selected="selected">${itemCategoryList.categoryName}
-														| ${itemCategoryList.categoryCode}</option>
+													test="${itemCategory.categoryId ne 0}">
+													<option value="${itemCategory.categoryId}"
+														selected="selected">${itemCategory.categoryName}
+														| ${itemCategory.categoryCode}</option>
 												</c:when>
 												<c:otherwise>
-													<option value="${itemCategoryList.categoryId}">${itemCategoryList.categoryName}
-														| ${itemCategoryList.categoryCode}</option>
+													<option value="${itemCategory.categoryId}">${itemCategory.categoryName}
+														| ${itemCategory.categoryCode}</option>
 												</c:otherwise>
 											</c:choose>
 										</c:forEach>
@@ -229,12 +229,12 @@ function check()
 							</thead>
 							<tbody>
 								<c:set scope="page" var="row" value="1" />
-								<c:forEach items="${itemSubCategoryList}" var="itemSubCategoryList">
+								<c:forEach items="${itemSubCategoryList}" var="itemSubCategory">
 									<tr class="gradeX">
 										<td>${row}</td>
-										<td>${itemSubCategoryList.itemCategory.categoryName}</td>
-										<td>${itemSubCategoryList.subCategoryName}</td>
-										<td>${itemSubCategoryList.subCategoryCode}</td>
+<%-- 										<td>${itemSubCategory.itemCategory.categoryName}</td> --%>
+										<td>${itemSubCategory.subCategoryName}</td>
+										<td>${itemSubCategory.subCategoryCode}</td>
 										<td><a class="btn btn-xs btn-circle btn-warning"
 										onclick="edit(${itemSubCategoryList.subCategoryId})"> <i
 												class="fa fa-pencil" aria-hidden="true"
